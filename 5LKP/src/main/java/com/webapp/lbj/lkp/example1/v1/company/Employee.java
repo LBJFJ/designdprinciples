@@ -1,7 +1,7 @@
-package com.webapp.lbj.lkp.example1.v2;
+package com.webapp.lbj.lkp.example1.v1.company;
 
 // 总公司员工
-class Employee {
+public class Employee {
     private String id;
 
     public void setId(String id) {

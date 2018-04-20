@@ -1,4 +1,9 @@
-package com.webapp.lbj.isp.example1.v1;
+package com.webapp.lbj.isp.example1.v2.application;
+
+import com.webapp.lbj.isp.example1.v2.calle.B;
+import com.webapp.lbj.isp.example1.v2.calle.D;
+import com.webapp.lbj.isp.example1.v2.caller.A;
+import com.webapp.lbj.isp.example1.v2.caller.C;
 
 public class Client {
     public static void main(String[] args) {

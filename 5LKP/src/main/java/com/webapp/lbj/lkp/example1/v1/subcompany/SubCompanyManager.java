@@ -1,9 +1,9 @@
-package com.webapp.lbj.lkp.example1.v2;
+package com.webapp.lbj.lkp.example1.v1.subcompany;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class SubCompanyManager {
+public class SubCompanyManager {
     public List<SubEmployee> getAllEmployee() {
         List<SubEmployee> list = new ArrayList<SubEmployee>();
         for (int i = 0; i < 100; i++) {
@@ -13,12 +13,5 @@ class SubCompanyManager {
             list.add(emp);
         }
         return list;
-    }
-
-    public void printEmployee() {
-        List<SubEmployee> list = this.getAllEmployee();
-        for (SubEmployee e : list) {
-            System.out.println(e.getId());
-        }
     }
 }

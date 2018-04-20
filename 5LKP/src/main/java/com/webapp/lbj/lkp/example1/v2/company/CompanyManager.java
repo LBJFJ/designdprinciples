@@ -1,10 +1,14 @@
-package com.webapp.lbj.lkp.example1.v2;
+package com.webapp.lbj.lkp.example1.v2.company;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.webapp.lbj.lkp.example1.v2.subcompany.SubCompanyManager;
 
-class CompanyManager {
+public class CompanyManager {
 
+    /**
+     * 方法的单一抽象层次
+     */
     public void printAllEmployee(SubCompanyManager sub) {
         sub.printEmployee();
         printEmployee();

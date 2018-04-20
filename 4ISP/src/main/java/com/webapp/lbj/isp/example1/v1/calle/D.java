@@ -1,6 +1,6 @@
-package com.webapp.lbj.isp.example1.v1;
+package com.webapp.lbj.isp.example1.v1.calle;
 
-class D implements I {
+public class D implements I {
     public void method1() {
         System.out.println("类D实现接口I的方法1");
     }

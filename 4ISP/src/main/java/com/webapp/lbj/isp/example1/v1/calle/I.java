@@ -1,6 +1,6 @@
-package com.webapp.lbj.isp.example1.v1;
+package com.webapp.lbj.isp.example1.v1.calle;
 
-interface I {
+public interface I {
     public void method1();
 
     public void method2();

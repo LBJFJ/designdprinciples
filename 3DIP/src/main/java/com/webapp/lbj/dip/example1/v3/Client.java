@@ -1,9 +1,23 @@
 package com.webapp.lbj.dip.example1.v3;
 
-class Newspaper implements IReader {
-    public String getContent() {
-        return "林书豪17+9助尼克斯击败老鹰……";
+public class Client {
+    public static void main(String[] args) {
+        Mother mother = new Mother();
+        mother.narrate(new Book());
+        mother.narrate(new Newspaper());
     }
+}
+
+class Mother {
+    public void narrate(IReader reader) {
+        System.out.println("妈妈开始讲故事");
+        System.out.println(reader.getContent());
+        System.out.println("---------------------------------");
+    }
+}
+
+interface IReader{  
+    public String getContent();  
 }
 
 class Book implements IReader {
@@ -12,17 +26,10 @@ class Book implements IReader {
     }
 }
 
-class Mother {
-    public void narrate(IReader reader) {
-        System.out.println("妈妈开始讲故事");
-        System.out.println(reader.getContent());
+class Newspaper implements IReader {
+    public String getContent() {
+        return "林书豪17+9助尼克斯击败老鹰……";
     }
 }
 
-public class Client {
-    public static void main(String[] args) {
-        Mother mother = new Mother();
-        mother.narrate(new Book());
-        mother.narrate(new Newspaper());
-    }
-}
+

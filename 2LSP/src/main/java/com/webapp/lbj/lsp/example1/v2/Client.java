@@ -1,5 +1,15 @@
 package com.webapp.lbj.lsp.example1.v2;
 
+public class Client {
+    public static void main(String[] args) {
+        B b = new B();
+        System.out.println("100-50=" + b.func1(100, 50));
+        System.out.println("100-80=" + b.func1(100, 80));
+        
+        System.out.println("100+20+100=" + b.func2(100, 20));
+    }
+}
+
 class A {
     public int func1(int a, int b) {
         return a - b;
@@ -16,12 +26,3 @@ class B extends A {
     }
 }
 
-
-public class Client {
-    public static void main(String[] args) {
-        B b = new B();
-        System.out.println("100-50=" + b.func1(100, 50));
-        System.out.println("100-80=" + b.func1(100, 80));
-        System.out.println("100+20+100=" + b.func2(100, 20));
-    }
-}

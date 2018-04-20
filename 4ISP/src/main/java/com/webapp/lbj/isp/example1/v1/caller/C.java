@@ -1,6 +1,8 @@
-package com.webapp.lbj.isp.example1.v1;
+package com.webapp.lbj.isp.example1.v1.caller;
 
-class C {
+import com.webapp.lbj.isp.example1.v1.calle.I;
+
+public class C {
     public void depend1(I i) {
         i.method1();
     }
